@@ -1,7 +1,8 @@
+
 <?php
 // @Force_Brain он сосал его ебали
 
-$heroku_app_name = 'phhptest' // << название_приложения_хероку
+
 
 define('API_KEY','5121049943:AAGpYMzfmFBL_VToZpfQ86V_8NXegZlCvaQ'); // << ТОКЕН_БОТА
 function bot($method,$datas=[]){
@@ -13,7 +14,6 @@ function bot($method,$datas=[]){
     $res = curl_exec($ch);
     if(curl_error($ch)){
         var_dump(curl_error($ch));
-        $setweb=file_get_contents('https://api.telegram.org/bot'.API_KEY.'/setWebhook?url=https://'.heroku_app_name.'.herokuapp.com&max_connections=100');
     }else{
         return json_decode($res);
     }

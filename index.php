@@ -1,7 +1,7 @@
 <?php
 // @Force_Brain он сосал его ебали
 
-$heroku_app_name = 'catsbottg' // << название_приложения_хероку
+$heroku_app_name = 'phhptest' // << название_приложения_хероку
 
 define('API_KEY','5121049943:AAGpYMzfmFBL_VToZpfQ86V_8NXegZlCvaQ'); // << ТОКЕН_БОТА
 function bot($method,$datas=[]){
